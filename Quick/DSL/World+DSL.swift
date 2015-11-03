@@ -97,6 +97,7 @@ extension World {
     }
 
     internal func pending(description: String, closure: () -> ()) {
-        print("Pending: \(description)")
+        // Prevent from printing to demo xctool not failing after running OS X scheme
+        //print("Pending: \(description)")
     }
 }
